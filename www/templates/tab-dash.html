@@ -1,0 +1,19 @@
+<ion-view view-title="DRAGON SLAYERR">
+  <ion-content class="padding">
+    <div class="appContainer">
+
+<!-- start message -->
+      <div ng-If="!gameStarted" class="start">
+      <button ng-Click="game()" >{{message}}</button>
+      <span> Click to begin...</span>
+      </div>
+
+<!-- game content -->
+      <div ng-If="gameStarted" class="gameContainer">
+        <div class="gameWindow">
+          <p>{{storyLine}}</p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
